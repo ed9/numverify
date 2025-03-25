@@ -1,0 +1,26 @@
+{
+    "name": "ed90/numverify",
+    "description": "NumVerify API SDK for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ed90\\Services\\NumVerify\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ed90\\Services\\NumVerify\\Providers\\NumVerifyServiceProvider"
+            ],
+            "aliases": {
+                "NumVerify": "Ed90\\Services\\NumVerify\\Facades\\NumVerify"
+            }
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^11.0",
+        "guzzlehttp/guzzle": "^7.0"
+    }
+}
